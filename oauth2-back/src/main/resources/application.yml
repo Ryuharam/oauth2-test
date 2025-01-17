@@ -1,4 +1,19 @@
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauth_test
+    username: myuser
+    password: mypassword
+
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
   security:
     oauth2:
       client:
@@ -8,9 +23,14 @@ spring:
             client-id: ${GOOGLE_CLIENT_ID}
             client-secret: ${GOOGLE_CLIENT_SECRET}
             scope:
-              - openid
               - profile
               - email
+
+logging:
+  level:
+    org.hibernate.sql: debug
+
 jwt:
-  issuer: ajufresh@gmail.com
-  secret_key: study-springboot
+  issuer: ssafy@ssafy.com
+  secret_key: studyspringbootstudyspringbootstudyspringbootstudyspringbootstudyspringboot
+

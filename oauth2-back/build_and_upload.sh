@@ -4,7 +4,7 @@
 JAR_NAME="oauth2-back-0.0.1-SNAPSHOT.jar" # 빌드 했을 때 나오는 jar 이름 복붙하세요 (ex. spring-boot-0.0.1-SNAPSHOT.jar)
 JAR_FILE="build/libs/$JAR_NAME"
 EC2_USER="ubuntu" # EC2 username
-EC2_HOST="13.124.41.92" # EC2 public IP 주소 넣으세요
+EC2_HOST="54.180.251.138" # EC2 public IP 주소 넣으세요
 KEY_PATH="$HOME/.ssh/ssafy-key.pem" # Path to your EC2 key pair
 DEST_PATH="~/spring_boot/" # jar 파일 넣을 폴더 경로. 끝에 / 붙여야 함
 
